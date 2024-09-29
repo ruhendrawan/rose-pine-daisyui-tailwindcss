@@ -1,9 +1,10 @@
-# rose-pine-daisyui-tailwindcss
+# rose-pine color themes for daisyui and tailwindcss
 
 1. Install tailwindcss and daisyui.
+
 2. Add the theme to the `tailwind.config.js`.
 
-```js
+```diff
 + const rosePineThemes = [
 +   {
 +     name: "rosepine",
@@ -66,7 +67,7 @@
 +     },
 +   },
 + ];
-+ 
++
 + const daisyThemes = rosePineThemes.map((theme) =+ ({
 +   [theme.name]: {
 +     primary: theme.colors.iris,
@@ -80,7 +81,7 @@
 +     error: theme.colors.love,
 +   },
 + }));
-+ 
++
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 -   content: [],
@@ -94,7 +95,7 @@ module.exports = {
 +     },
 -   plugins: [],
 - }
-- 
+-
 +   plugins: [require("daisyui")],
 +   daisyui: {
 +     themes: daisyThemes,
@@ -104,7 +105,7 @@ module.exports = {
 
 3. Activate the theme in `index.html`
 
-```html
+```diff
 -  <div class="bg-transparent">
 +  <div data-theme="rosepine" class="bg-transparent">
 ```
