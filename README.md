@@ -1,5 +1,7 @@
 # rose-pine color themes for daisyui and tailwindcss
 
+![rose-pine for daisyui theme screenshot](https://github.com/ruhendrawan/rose-pine-daisyui-tailwindcss/blob/main/pine-rose-theme-daisyui.png)
+
 1. Install tailwindcss and daisyui.
 
 2. Add the theme to the `tailwind.config.js`.
